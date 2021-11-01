@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    body{text-align:center;font-family: 'Open Sans', sans-serif;}
+    svg{width:30%;}
+    .heavy { font: bold 20px sans-serif; }
+  </style>
+  <script>
+      var count = $(('#count'));
+      $({ Counter: 0 }).animate({ Counter: count.text() }, {
+        duration: 5000,
+        easing: 'linear',
+        step: function () {
+          count.text(Math.ceil(this.Counter)+ "%");
+        }
+      });
+      </script>
+</head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+</style>
+<body>
+    <table style="" border="2">
+    <tbody>
+    <tr>
+    <td><strong>Date</strong></td>
+    <td><strong>Project</strong></td>
+    <td><strong>Task List</strong></td>
+    <td><strong>Hours</strong></td>
+    <td><strong>Status</strong></td>
+    </tr>
+    <tr>
+        <td align='left' #DateRowSpan1#>#Date1#</td>
+        <td align='left' #ProjectRowSpan1#>#Project1#</td>
+        <td align='left' #TaskListRowSpan1#>#TaskList1#</td>
+        <td align='left' #HoursRowSpan1#>#Hours1#</td>
+        <td align='left' #StatusRowSpan1#>#Status1#</td>
+    </tr>
+    <!--- #ADDROW -->
+    #ADDROW#
+    </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XNj-xQ-PPE">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NotificationsVC-->
+        <scene sceneID="wjk-co-6vQ">
+            <objects>
+                <viewController storyboardIdentifier="NotificationsVC" id="XNj-xQ-PPE" customClass="NotificationsVC" customModule="TaskManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kVX-hr-93W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9t-ZJ-aXb" customClass="CustomHeaderView" customModule="TaskManager" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-60" width="320" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HIZ-kO-ktj"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5gk-9b-efW">
+                                <rect key="frame" x="0.0" y="40" width="320" height="479"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.94901960784313721" green="0.95686274509803915" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XNj-xQ-PPE" id="dSK-uf-8nk"/>
+                                    <outlet property="delegate" destination="XNj-xQ-PPE" id="1Xj-Ve-LB0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V1u-Oa-3vF" firstAttribute="trailing" secondItem="5gk-9b-efW" secondAttribute="trailing" id="0S9-de-kqO"/>
+                            <constraint firstItem="k9t-ZJ-aXb" firstAttribute="leading" secondItem="V1u-Oa-3vF" secondAttribute="leading" id="FWf-ud-D6Z"/>
+                            <constraint firstItem="V1u-Oa-3vF" firstAttribute="trailing" secondItem="k9t-ZJ-aXb" secondAttribute="trailing" id="IbQ-7t-vSE"/>
+                            <constraint firstItem="k9t-ZJ-aXb" firstAttribute="top" secondItem="V1u-Oa-3vF" secondAttribute="top" constant="-60" id="g3L-Qo-Ty5"/>
+                            <constraint firstItem="5gk-9b-efW" firstAttribute="centerX" secondItem="V1u-Oa-3vF" secondAttribute="centerX" id="oVl-l3-sme"/>
+                            <constraint firstItem="5gk-9b-efW" firstAttribute="leading" secondItem="V1u-Oa-3vF" secondAttribute="leading" id="tK2-xJ-Qfc"/>
+                            <constraint firstItem="V1u-Oa-3vF" firstAttribute="bottom" secondItem="5gk-9b-efW" secondAttribute="bottom" id="zOh-MQ-Be4"/>
+                            <constraint firstItem="5gk-9b-efW" firstAttribute="top" secondItem="k9t-ZJ-aXb" secondAttribute="bottom" id="zgR-Vi-nGS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V1u-Oa-3vF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab3_unselect" selectedImage="tab3_select" id="LYR-iv-Lhg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="5gk-9b-efW" id="0A5-vO-79H"/>
+                        <outlet property="viewHeader" destination="k9t-ZJ-aXb" id="oyu-Ug-Kjr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnj-Ph-Z4J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="202"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab3_select" width="30" height="30"/>
+        <image name="tab3_unselect" width="30" height="30"/>
+    </resources>
+</document>
