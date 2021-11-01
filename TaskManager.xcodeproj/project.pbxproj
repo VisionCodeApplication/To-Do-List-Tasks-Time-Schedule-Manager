@@ -42,11 +42,11 @@
 		63D6F28223D5CF6900DB8822 /* TaskTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63D6F28023D5CF6900DB8822 /* TaskTableCell.xib */; };
 		63F23D5123FAB71B00E3CB1C /* CustomPrintPageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F23D5023FAB71B00E3CB1C /* CustomPrintPageRenderer.swift */; };
 		63F2D91523E192A600D2EAF4 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F2D91423E192A600D2EAF4 /* TextFieldExtension.swift */; };
-		88158DC12723DCC100CA0839 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88158DC02723DCC100CA0839 /* UIImage+Gif.swift */; };
 		881872EF27226D30002DC591 /* Poppins in Resources */ = {isa = PBXBuildFile; fileRef = 881872EE27226D30002DC591 /* Poppins */; };
 		8821004A272D19C30042E3DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88210049272D19C30042E3DF /* Main.storyboard */; };
 		8839880F27241B5100047510 /* 123.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8839880E27241B5100047510 /* 123.gif */; };
 		88398815272433EA00047510 /* Reminderclock.gif in Resources */ = {isa = PBXBuildFile; fileRef = 88398814272433EA00047510 /* Reminderclock.gif */; };
+		88571B0E272FEC9900E91D8D /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88571B0D272FEC9900E91D8D /* UIImage+Gif.swift */; };
 		88AED4B12724392500493B61 /* Task.gif in Resources */ = {isa = PBXBuildFile; fileRef = 88AED4B02724392500493B61 /* Task.gif */; };
 		88AED4B327243A0600493B61 /* Splash.gif in Resources */ = {isa = PBXBuildFile; fileRef = 88AED4B227243A0600493B61 /* Splash.gif */; };
 		88AED4B527243B1300493B61 /* Meeting.gif in Resources */ = {isa = PBXBuildFile; fileRef = 88AED4B427243B1300493B61 /* Meeting.gif */; };
@@ -95,11 +95,11 @@
 		63F23D5023FAB71B00E3CB1C /* CustomPrintPageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrintPageRenderer.swift; sourceTree = "<group>"; };
 		63F2D91423E192A600D2EAF4 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		8806715D27281C7200593740 /* MyTask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTask.entitlements; sourceTree = "<group>"; };
-		88158DC02723DCC100CA0839 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "../../../UIImage+Gif.swift"; sourceTree = "<group>"; };
 		881872EE27226D30002DC591 /* Poppins */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Poppins; sourceTree = "<group>"; };
 		88210049272D19C30042E3DF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8839880E27241B5100047510 /* 123.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 123.gif; sourceTree = "<group>"; };
 		88398814272433EA00047510 /* Reminderclock.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Reminderclock.gif; sourceTree = "<group>"; };
+		88571B0D272FEC9900E91D8D /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Gif.swift"; path = "TaskManager/UIImage+Gif.swift"; sourceTree = SOURCE_ROOT; };
 		88AED4B02724392500493B61 /* Task.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Task.gif; sourceTree = "<group>"; };
 		88AED4B227243A0600493B61 /* Splash.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Splash.gif; sourceTree = "<group>"; };
 		88AED4B427243B1300493B61 /* Meeting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Meeting.gif; sourceTree = "<group>"; };
@@ -216,7 +216,7 @@
 				634A596D23D1B60100D9BB80 /* Model */,
 				634A595923D1B13600D9BB80 /* AppDelegate.swift */,
 				88210049272D19C30042E3DF /* Main.storyboard */,
-				88158DC02723DCC100CA0839 /* UIImage+Gif.swift */,
+				88571B0D272FEC9900E91D8D /* UIImage+Gif.swift */,
 				639AC8A923D1E011006DF432 /* Tabbar.storyboard */,
 				634A596223D1B13800D9BB80 /* Assets.xcassets */,
 				88FD6C03272277AD0057B8E7 /* Animation */,
@@ -542,7 +542,7 @@
 				63D6F28123D5CF6900DB8822 /* TaskTableCell.swift in Sources */,
 				3DB6A29A245C2D9E00260844 /* IAPHelper.swift in Sources */,
 				88FA58BB2722E70F00FA0D7B /* SplashVC.swift in Sources */,
-				88158DC12723DCC100CA0839 /* UIImage+Gif.swift in Sources */,
+				88571B0E272FEC9900E91D8D /* UIImage+Gif.swift in Sources */,
 				639AC8C223D1EBF7006DF432 /* NotificationsVC.swift in Sources */,
 				634741F023E03C6A006CAD94 /* TaskModel.swift in Sources */,
 				633E7A2F23ED8D12005F89CB /* NotificationTableCell.swift in Sources */,
