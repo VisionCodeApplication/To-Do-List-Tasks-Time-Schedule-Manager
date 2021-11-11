@@ -85,12 +85,6 @@ class DailyTaskVC: UIViewController,UITextFieldDelegate,GADBannerViewDelegate, U
         TotalTaskView.isUserInteractionEnabled = true
         var tapges = UITapGestureRecognizer(target: self, action: #selector(ontap))
         TotalTaskView.addGestureRecognizer(tapges)
-      /*  NoTaskView = .init(name: "animation")
-        
-        NoTaskView!.loopMode = .loop
-        NoTaskView!.animationSpeed = 0.5
-        NoTaskView?.frame = CGRect(x: 10, y: 5, width: 360, height: 199)
-        Notaskanimationview.addSubview(NoTaskView!)*/
         
         LaunchInterstitialAd()
     }
