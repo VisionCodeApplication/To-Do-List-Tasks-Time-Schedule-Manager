@@ -5,7 +5,7 @@ target 'TaskManager' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'UnityAds'
-  pod 'SSCustomTabbar', '~> 2.0'
+  pod 'SSCustomTabbar'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
   pod ‘Firebase/Database’
